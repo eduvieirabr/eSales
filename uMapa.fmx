@@ -1,0 +1,32 @@
+object frmMapa: TfrmMapa
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 640
+  ClientWidth = 761
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TMSFMXWebGMaps1: TTMSFMXWebGMaps
+    Align = Client
+    Version = '2.9.4.1'
+    Size.Width = 761.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    Clusters = <>
+    Markers = <>
+    Polylines = <>
+    Polygons = <>
+    Directions = <>
+    MapOptions.ZoomMap = 5
+    MapOptions.DefaultLatitude = 48.859040000000000000
+    MapOptions.DefaultLongitude = 2.294297000000000000
+    Routing.PolylineOptions.Icons = <>
+    StreetViewOptions.DefaultLatitude = 48.859040000000000000
+    StreetViewOptions.DefaultLongitude = 2.294297000000000000
+    ControlsOptions.ControlsType = ctZoomPan
+    PolygonLabel.Font.Family = 'Arial'
+    TabOrder = 0
+  end
+end

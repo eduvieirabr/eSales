@@ -1,0 +1,1587 @@
+object frmCli: TfrmCli
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 625
+  ClientWidth = 650
+  StyleBook = Form1.StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 650.000000000000000000
+    Size.Height = 577.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    OnChange = TabControl1Change
+    Sizes = (
+      650s
+      528s
+      650s
+      528s
+      650s
+      528s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 216.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Lista de Clientes'
+      ExplicitSize.cx = 243.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object wwDataGrid1: TwwDataGrid
+        Touch.InteractiveGestures = [Pan]
+        Align = Contents
+        EnableDragHighlight = False
+        Locked = True
+        Size.Width = 650.000000000000000000
+        Size.Height = 528.000000000000000000
+        Size.PlatformDefault = False
+        ShowScrollBars = False
+        TabOrder = 0
+        DataSource = BindSourceDB1
+        HeightRow = 48
+        LineAttributes.LineOpacity = 1.000000000000000000
+        Options = [dgEditing, dgTitles, dgColumnResize, dgColumnReorder, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgRowResize]
+        OnButtonClick = wwDataGrid1ButtonClick
+        TitleAttributes.Options = [sfoSortAscending, sfoSortDescending, sfoCreateIndexes, sfoTitleButtonAutoSort, sfoFilter]
+        TitleAttributes.TitleButtons = True
+        TitleAttributes.TitleUsesButtonFont = False
+        object wwDataGrid1A1_MAIDUPL: TwwGridColumn
+          FieldName = 'A1_MAIDUPL'
+          Title = 'A1_MAIDUPL'
+          Width = -1
+          Visible = False
+          Index = 0
+        end
+        object wwDataGrid1A1_CEPE2: TwwGridColumn
+          FieldName = 'A1_CEPE'
+          ControlType = gdctButton
+          Title = '..'
+          Width = 128
+          WordWrap = True
+          Index = 1
+          ControlAttributes.Button.Text = 'Obter Rota'
+        end
+        object wwDataGrid1A1_CEPE: TwwGridColumn
+          FieldName = 'A1_CEPE'
+          Title = 'A1_CEPE'
+          Width = -1
+          Visible = False
+          Index = 2
+        end
+        object wwDataGrid1A1_ESTE: TwwGridColumn
+          FieldName = 'A1_ESTE'
+          Title = 'A1_ESTE'
+          Width = -1
+          Visible = False
+          Index = 3
+        end
+        object wwDataGrid1A1_SATIV1: TwwGridColumn
+          FieldName = 'A1_SATIV1'
+          Title = 'A1_SATIV1'
+          Width = -1
+          Visible = False
+          Index = 4
+        end
+        object wwDataGrid1A1_DSATIV1: TwwGridColumn
+          FieldName = 'A1_DSATIV1'
+          Title = 'A1_DSATIV1'
+          Width = -1
+          Visible = False
+          Index = 5
+        end
+        object wwDataGrid1A1_SATIV2: TwwGridColumn
+          FieldName = 'A1_SATIV2'
+          Title = 'A1_SATIV2'
+          Width = -1
+          Visible = False
+          Index = 6
+        end
+        object wwDataGrid1A1_DSATIV2: TwwGridColumn
+          FieldName = 'A1_DSATIV2'
+          Title = 'A1_DSATIV2'
+          Width = -1
+          Visible = False
+          Index = 7
+        end
+        object wwDataGrid1A1_CODPAIS: TwwGridColumn
+          FieldName = 'A1_CODPAIS'
+          Title = 'A1_CODPAIS'
+          Width = -1
+          Visible = False
+          Index = 8
+        end
+        object wwDataGrid1A1_TPESSOA: TwwGridColumn
+          FieldName = 'A1_TPESSOA'
+          Title = 'A1_TPESSOA'
+          Width = -1
+          Visible = False
+          Index = 9
+        end
+        object wwDataGrid1A1_CODLOC: TwwGridColumn
+          FieldName = 'A1_CODLOC'
+          Title = 'A1_CODLOC'
+          Width = -1
+          Visible = False
+          Index = 10
+        end
+        object wwDataGrid1A1_SATIV3: TwwGridColumn
+          FieldName = 'A1_SATIV3'
+          Title = 'A1_SATIV3'
+          Width = -1
+          Visible = False
+          Index = 11
+        end
+        object wwDataGrid1A1_DSATIV3: TwwGridColumn
+          FieldName = 'A1_DSATIV3'
+          Title = 'A1_DSATIV3'
+          Width = -1
+          Visible = False
+          Index = 12
+        end
+        object wwDataGrid1A1_SATIV4: TwwGridColumn
+          FieldName = 'A1_SATIV4'
+          Title = 'A1_SATIV4'
+          Width = -1
+          Visible = False
+          Index = 13
+        end
+        object wwDataGrid1A1_TABELA: TwwGridColumn
+          FieldName = 'A1_TABELA'
+          Title = 'Tabela de Pre'#231'o'
+          Width = -1
+          Visible = False
+          Index = 14
+        end
+        object wwDataGrid1A1_INCISS: TwwGridColumn
+          FieldName = 'A1_INCISS'
+          Title = 'A1_INCISS'
+          Width = -1
+          Visible = False
+          Index = 15
+        end
+        object wwDataGrid1A1_SALDUPM: TwwGridColumn
+          FieldName = 'A1_SALDUPM'
+          Title = 'A1_SALDUPM'
+          Width = -1
+          Visible = False
+          Index = 16
+        end
+        object wwDataGrid1A1_PAGATR: TwwGridColumn
+          FieldName = 'A1_PAGATR'
+          Title = 'A1_PAGATR'
+          Width = -1
+          Visible = False
+          Index = 17
+        end
+        object wwDataGrid1A1_CXPOSTA: TwwGridColumn
+          FieldName = 'A1_CXPOSTA'
+          Title = 'A1_CXPOSTA'
+          Width = -1
+          Visible = False
+          Index = 18
+        end
+        object wwDataGrid1A1_ATIVIDA: TwwGridColumn
+          FieldName = 'A1_ATIVIDA'
+          Title = 'A1_ATIVIDA'
+          Width = -1
+          Visible = False
+          Index = 19
+        end
+        object wwDataGrid1A1_CARGO1: TwwGridColumn
+          FieldName = 'A1_CARGO1'
+          Title = 'A1_CARGO1'
+          Width = -1
+          Visible = False
+          Index = 20
+        end
+        object wwDataGrid1A1_CARGO2: TwwGridColumn
+          FieldName = 'A1_CARGO2'
+          Title = 'A1_CARGO2'
+          Width = -1
+          Visible = False
+          Index = 21
+        end
+        object wwDataGrid1A1_CARGO3: TwwGridColumn
+          FieldName = 'A1_CARGO3'
+          Title = 'A1_CARGO3'
+          Width = -1
+          Visible = False
+          Index = 22
+        end
+        object wwDataGrid1A1_ALIQIR: TwwGridColumn
+          FieldName = 'A1_ALIQIR'
+          Title = 'A1_ALIQIR'
+          Width = -1
+          Visible = False
+          Index = 23
+        end
+        object wwDataGrid1A1_SUPER: TwwGridColumn
+          FieldName = 'A1_SUPER'
+          Title = 'A1_SUPER'
+          Width = -1
+          Visible = False
+          Index = 24
+        end
+        object wwDataGrid1A1_RTEC: TwwGridColumn
+          FieldName = 'A1_RTEC'
+          Title = 'A1_RTEC'
+          Width = -1
+          Visible = False
+          Index = 25
+        end
+        object wwDataGrid1A1_OBSERV: TwwGridColumn
+          FieldName = 'A1_OBSERV'
+          Title = 'A1_OBSERV'
+          Width = -1
+          Visible = False
+          Index = 26
+        end
+        object wwDataGrid1A1_RG: TwwGridColumn
+          FieldName = 'A1_RG'
+          Title = 'A1_RG'
+          Width = -1
+          Visible = False
+          Index = 27
+        end
+        object wwDataGrid1A1_CALCSUF: TwwGridColumn
+          FieldName = 'A1_CALCSUF'
+          Title = 'A1_CALCSUF'
+          Width = -1
+          Visible = False
+          Index = 28
+        end
+        object wwDataGrid1A1_DTNASC: TwwGridColumn
+          FieldName = 'A1_DTNASC'
+          Title = 'A1_DTNASC'
+          Width = -1
+          Visible = False
+          Index = 29
+        end
+        object wwDataGrid1A1_SALPEDB: TwwGridColumn
+          FieldName = 'A1_SALPEDB'
+          Title = 'A1_SALPEDB'
+          Width = -1
+          Visible = False
+          Index = 30
+        end
+        object wwDataGrid1A1_CLIFAT: TwwGridColumn
+          FieldName = 'A1_CLIFAT'
+          Title = 'A1_CLIFAT'
+          Width = -1
+          Visible = False
+          Index = 31
+        end
+        object wwDataGrid1A1_GRPTRIB: TwwGridColumn
+          FieldName = 'A1_GRPTRIB'
+          Title = 'A1_GRPTRIB'
+          Width = -1
+          Visible = False
+          Index = 32
+        end
+        object wwDataGrid1A1_BAIRROC: TwwGridColumn
+          FieldName = 'A1_BAIRROC'
+          Title = 'A1_BAIRROC'
+          Width = -1
+          Visible = False
+          Index = 33
+        end
+        object wwDataGrid1A1_CEPC: TwwGridColumn
+          FieldName = 'A1_CEPC'
+          Title = 'A1_CEPC'
+          Width = -1
+          Visible = False
+          Index = 34
+        end
+        object wwDataGrid1A1_MUNC: TwwGridColumn
+          FieldName = 'A1_MUNC'
+          Title = 'A1_MUNC'
+          Width = -1
+          Visible = False
+          Index = 35
+        end
+        object wwDataGrid1A1_ESTC: TwwGridColumn
+          FieldName = 'A1_ESTC'
+          Title = 'A1_ESTC'
+          Width = -1
+          Visible = False
+          Index = 36
+        end
+        object wwDataGrid1A1_BAIRROE: TwwGridColumn
+          FieldName = 'A1_BAIRROE'
+          Title = 'A1_BAIRROE'
+          Width = -1
+          Visible = False
+          Index = 37
+        end
+        object wwDataGrid1A1_MUNE: TwwGridColumn
+          FieldName = 'A1_MUNE'
+          Title = 'A1_MUNE'
+          Width = -1
+          Visible = False
+          Index = 38
+        end
+        object wwDataGrid1A1_DSATIV4: TwwGridColumn
+          FieldName = 'A1_DSATIV4'
+          Title = 'A1_DSATIV4'
+          Width = -1
+          Visible = False
+          Index = 39
+        end
+        object wwDataGrid1A1_SATIV5: TwwGridColumn
+          FieldName = 'A1_SATIV5'
+          Title = 'A1_SATIV5'
+          Width = -1
+          Visible = False
+          Index = 40
+        end
+        object wwDataGrid1A1_DSATIV5: TwwGridColumn
+          FieldName = 'A1_DSATIV5'
+          Title = 'A1_DSATIV5'
+          Width = -1
+          Visible = False
+          Index = 41
+        end
+        object wwDataGrid1A1_SATIV6: TwwGridColumn
+          FieldName = 'A1_SATIV6'
+          Title = 'A1_SATIV6'
+          Width = -1
+          Visible = False
+          Index = 42
+        end
+        object wwDataGrid1A1_DSATIV6: TwwGridColumn
+          FieldName = 'A1_DSATIV6'
+          Title = 'A1_DSATIV6'
+          Width = -1
+          Visible = False
+          Index = 43
+        end
+        object wwDataGrid1A1_SATIV7: TwwGridColumn
+          FieldName = 'A1_SATIV7'
+          Title = 'A1_SATIV7'
+          Width = -1
+          Visible = False
+          Index = 44
+        end
+        object wwDataGrid1A1_DSATIV7: TwwGridColumn
+          FieldName = 'A1_DSATIV7'
+          Title = 'A1_DSATIV7'
+          Width = -1
+          Visible = False
+          Index = 45
+        end
+        object wwDataGrid1A1_SATIV8: TwwGridColumn
+          FieldName = 'A1_SATIV8'
+          Title = 'A1_SATIV8'
+          Width = -1
+          Visible = False
+          Index = 46
+        end
+        object wwDataGrid1A1_DSATIV8: TwwGridColumn
+          FieldName = 'A1_DSATIV8'
+          Title = 'A1_DSATIV8'
+          Width = -1
+          Visible = False
+          Index = 47
+        end
+        object wwDataGrid1A1_CODMARC: TwwGridColumn
+          FieldName = 'A1_CODMARC'
+          Title = 'A1_CODMARC'
+          Width = -1
+          Visible = False
+          Index = 48
+        end
+        object wwDataGrid1A1_CODAGE: TwwGridColumn
+          FieldName = 'A1_CODAGE'
+          Title = 'A1_CODAGE'
+          Width = -1
+          Visible = False
+          Index = 49
+        end
+        object wwDataGrid1A1_VM_MARC: TwwGridColumn
+          FieldName = 'A1_VM_MARC'
+          Title = 'A1_VM_MARC'
+          Width = -1
+          Visible = False
+          Index = 50
+        end
+        object wwDataGrid1A1_COMAGE: TwwGridColumn
+          FieldName = 'A1_COMAGE'
+          Title = 'A1_COMAGE'
+          Width = -1
+          Visible = False
+          Index = 51
+        end
+        object wwDataGrid1A1_TIPCLI: TwwGridColumn
+          FieldName = 'A1_TIPCLI'
+          Title = 'A1_TIPCLI'
+          Width = -1
+          Visible = False
+          Index = 52
+        end
+        object wwDataGrid1A1_EMAIL: TwwGridColumn
+          FieldName = 'A1_EMAIL'
+          Title = 'A1_EMAIL'
+          Width = -1
+          Visible = False
+          Index = 53
+        end
+        object wwDataGrid1A1_DEST_1: TwwGridColumn
+          FieldName = 'A1_DEST_1'
+          Title = 'A1_DEST_1'
+          Width = -1
+          Visible = False
+          Index = 54
+        end
+        object wwDataGrid1A1_CODMUN: TwwGridColumn
+          FieldName = 'A1_CODMUN'
+          Title = 'A1_CODMUN'
+          Width = -1
+          Visible = False
+          Index = 55
+        end
+        object wwDataGrid1A1_DEST_2: TwwGridColumn
+          FieldName = 'A1_DEST_2'
+          Title = 'A1_DEST_2'
+          Width = -1
+          Visible = False
+          Index = 56
+        end
+        object wwDataGrid1A1_HPAGE: TwwGridColumn
+          FieldName = 'A1_HPAGE'
+          Title = 'A1_HPAGE'
+          Width = -1
+          Visible = False
+          Index = 57
+        end
+        object wwDataGrid1A1_DEST_3: TwwGridColumn
+          FieldName = 'A1_DEST_3'
+          Title = 'A1_DEST_3'
+          Width = -1
+          Visible = False
+          Index = 58
+        end
+        object wwDataGrid1A1_CONDPAG: TwwGridColumn
+          FieldName = 'A1_CONDPAG'
+          Title = 'A1_CONDPAG'
+          Width = -1
+          Visible = False
+          Index = 59
+        end
+        object wwDataGrid1A1_DIASPAG: TwwGridColumn
+          FieldName = 'A1_DIASPAG'
+          Title = 'A1_DIASPAG'
+          Width = -1
+          Visible = False
+          Index = 60
+        end
+        object wwDataGrid1A1_DESCPAG: TwwGridColumn
+          FieldName = 'A1_DESCPAG'
+          Title = 'A1_DESCPAG'
+          Width = -1
+          Visible = False
+          Index = 61
+        end
+        object wwDataGrid1A1_OBS: TwwGridColumn
+          FieldName = 'A1_OBS'
+          Title = 'A1_OBS'
+          Width = -1
+          Visible = False
+          Index = 62
+        end
+        object wwDataGrid1A1_AGREG: TwwGridColumn
+          FieldName = 'A1_AGREG'
+          Title = 'A1_AGREG'
+          Width = -1
+          Visible = False
+          Index = 63
+        end
+        object wwDataGrid1A1_MATR: TwwGridColumn
+          FieldName = 'A1_MATR'
+          Title = 'A1_MATR'
+          Width = -1
+          Visible = False
+          Index = 64
+        end
+        object wwDataGrid1A1_VM_OBS: TwwGridColumn
+          FieldName = 'A1_VM_OBS'
+          Title = 'A1_VM_OBS'
+          Width = -1
+          Visible = False
+          Index = 65
+        end
+        object wwDataGrid1A1_CODHIST: TwwGridColumn
+          FieldName = 'A1_CODHIST'
+          Title = 'A1_CODHIST'
+          Width = -1
+          Visible = False
+          Index = 66
+        end
+        object wwDataGrid1A1_RECINSS: TwwGridColumn
+          FieldName = 'A1_RECINSS'
+          Title = 'A1_RECINSS'
+          Width = -1
+          Visible = False
+          Index = 67
+        end
+        object wwDataGrid1A1_RECCOFI: TwwGridColumn
+          FieldName = 'A1_RECCOFI'
+          Title = 'A1_RECCOFI'
+          Width = -1
+          Visible = False
+          Index = 68
+        end
+        object wwDataGrid1A1_RECCSLL: TwwGridColumn
+          FieldName = 'A1_RECCSLL'
+          Title = 'A1_RECCSLL'
+          Width = -1
+          Visible = False
+          Index = 69
+        end
+        object wwDataGrid1A1_RECPIS: TwwGridColumn
+          FieldName = 'A1_RECPIS'
+          Title = 'A1_RECPIS'
+          Width = -1
+          Visible = False
+          Index = 70
+        end
+        object wwDataGrid1A1_HISTMK: TwwGridColumn
+          FieldName = 'A1_HISTMK'
+          Title = 'A1_HISTMK'
+          Width = -1
+          Visible = False
+          Index = 71
+        end
+        object wwDataGrid1A1_TIPPER: TwwGridColumn
+          FieldName = 'A1_TIPPER'
+          Title = 'A1_TIPPER'
+          Width = -1
+          Visible = False
+          Index = 72
+        end
+        object wwDataGrid1A1_COD_MUN: TwwGridColumn
+          FieldName = 'A1_COD_MUN'
+          Title = 'A1_COD_MUN'
+          Width = -1
+          Visible = False
+          Index = 73
+        end
+        object wwDataGrid1A1_SALFIN: TwwGridColumn
+          FieldName = 'A1_SALFIN'
+          Title = 'A1_SALFIN'
+          Width = -1
+          Visible = False
+          Index = 74
+        end
+        object wwDataGrid1A1_CONTAB: TwwGridColumn
+          FieldName = 'A1_CONTAB'
+          Title = 'A1_CONTAB'
+          Width = -1
+          Visible = False
+          Index = 75
+        end
+        object wwDataGrid1A1_SALFINM: TwwGridColumn
+          FieldName = 'A1_SALFINM'
+          Title = 'A1_SALFINM'
+          Width = -1
+          Visible = False
+          Index = 76
+        end
+        object wwDataGrid1A1_B2B: TwwGridColumn
+          FieldName = 'A1_B2B'
+          Title = 'A1_B2B'
+          Width = -1
+          Visible = False
+          Index = 77
+        end
+        object wwDataGrid1A1_GRPVEN: TwwGridColumn
+          FieldName = 'A1_GRPVEN'
+          Title = 'A1_GRPVEN'
+          Width = -1
+          Visible = False
+          Index = 78
+        end
+        object wwDataGrid1A1_CLICNV: TwwGridColumn
+          FieldName = 'A1_CLICNV'
+          Title = 'A1_CLICNV'
+          Width = -1
+          Visible = False
+          Index = 79
+        end
+        object wwDataGrid1A1_INSCRUR: TwwGridColumn
+          FieldName = 'A1_INSCRUR'
+          Title = 'A1_INSCRUR'
+          Width = -1
+          Visible = False
+          Index = 80
+        end
+        object wwDataGrid1A1_MSBLQL: TwwGridColumn
+          FieldName = 'A1_MSBLQL'
+          Title = 'A1_MSBLQL'
+          Width = -1
+          Visible = False
+          Index = 81
+        end
+        object wwDataGrid1A1_SITUA: TwwGridColumn
+          FieldName = 'A1_SITUA'
+          Title = 'A1_SITUA'
+          Width = -1
+          Visible = False
+          Index = 82
+        end
+        object wwDataGrid1A1_NUMRA: TwwGridColumn
+          FieldName = 'A1_NUMRA'
+          Title = 'A1_NUMRA'
+          Width = -1
+          Visible = False
+          Index = 83
+        end
+        object wwDataGrid1A1_SUBCOD: TwwGridColumn
+          FieldName = 'A1_SUBCOD'
+          Title = 'A1_SUBCOD'
+          Width = -1
+          Visible = False
+          Index = 84
+        end
+        object wwDataGrid1A1_CDRDES: TwwGridColumn
+          FieldName = 'A1_CDRDES'
+          Title = 'A1_CDRDES'
+          Width = -1
+          Visible = False
+          Index = 85
+        end
+        object wwDataGrid1A1_REGDES: TwwGridColumn
+          FieldName = 'A1_REGDES'
+          Title = 'A1_REGDES'
+          Width = -1
+          Visible = False
+          Index = 86
+        end
+        object wwDataGrid1A1_FILDEB: TwwGridColumn
+          FieldName = 'A1_FILDEB'
+          Title = 'A1_FILDEB'
+          Width = -1
+          Visible = False
+          Index = 87
+        end
+        object wwDataGrid1A1_CODFOR: TwwGridColumn
+          FieldName = 'A1_CODFOR'
+          Title = 'A1_CODFOR'
+          Width = -1
+          Visible = False
+          Index = 88
+        end
+        object wwDataGrid1A1_FILIAL: TwwGridColumn
+          FieldName = 'A1_FILIAL'
+          Title = 'A1_FILIAL'
+          Width = -1
+          Visible = False
+          Index = 89
+        end
+        object wwDataGrid1A1_LOJA: TwwGridColumn
+          FieldName = 'A1_LOJA'
+          Title = 'A1_LOJA'
+          Width = -1
+          Visible = False
+          Index = 90
+        end
+        object wwDataGrid1A1_PESSOA: TwwGridColumn
+          FieldName = 'A1_PESSOA'
+          Title = 'A1_PESSOA'
+          Width = -1
+          Visible = False
+          Index = 91
+        end
+        object wwDataGrid1A1_NOME: TwwGridColumn
+          FieldName = 'A1_NOME'
+          Title = 'Nome'
+          Width = 300
+          WordWrap = True
+          Index = 92
+        end
+        object wwDataGrid1A1_NREDUZ: TwwGridColumn
+          FieldName = 'A1_NREDUZ'
+          Title = 'Fantasia'
+          Width = 300
+          WordWrap = True
+          Index = 93
+        end
+        object wwDataGrid1A1_TIPO: TwwGridColumn
+          FieldName = 'A1_TIPO'
+          Title = 'A1_TIPO'
+          Width = -1
+          Visible = False
+          Index = 94
+        end
+        object wwDataGrid1A1_END: TwwGridColumn
+          FieldName = 'A1_END'
+          Title = 'Endere'#231'o'
+          Width = 200
+          WordWrap = True
+          Index = 95
+        end
+        object wwDataGrid1A1_MUN: TwwGridColumn
+          FieldName = 'A1_MUN'
+          Title = 'Cidade'
+          Width = 150
+          WordWrap = True
+          Index = 96
+        end
+        object wwDataGrid1A1_EST: TwwGridColumn
+          FieldName = 'A1_EST'
+          Title = 'Estado'
+          Width = 100
+          WordWrap = True
+          Index = 97
+        end
+        object wwDataGrid1A1_NATUREZ: TwwGridColumn
+          FieldName = 'A1_NATUREZ'
+          Title = 'A1_NATUREZ'
+          Width = -1
+          Visible = False
+          Index = 98
+        end
+        object wwDataGrid1A1_ESTADO: TwwGridColumn
+          FieldName = 'A1_ESTADO'
+          Title = 'A1_ESTADO'
+          Width = -1
+          Visible = False
+          Index = 99
+        end
+        object wwDataGrid1A1_BAIRRO: TwwGridColumn
+          FieldName = 'A1_BAIRRO'
+          Title = 'Bairro'
+          Width = 200
+          WordWrap = True
+          Index = 100
+        end
+        object wwDataGrid1A1_CEP: TwwGridColumn
+          FieldName = 'A1_CEP'
+          Title = 'CEP'
+          Width = 110
+          WordWrap = True
+          Index = 101
+        end
+        object wwDataGrid1A1_DDI: TwwGridColumn
+          FieldName = 'A1_DDI'
+          Title = 'A1_DDI'
+          Width = -1
+          Visible = False
+          Index = 102
+        end
+        object wwDataGrid1A1_DDD: TwwGridColumn
+          FieldName = 'A1_DDD'
+          Title = 'A1_DDD'
+          Width = -1
+          Visible = False
+          Index = 103
+        end
+        object wwDataGrid1A1_TEL: TwwGridColumn
+          FieldName = 'A1_TEL'
+          Title = 'Telefone'
+          Width = 150
+          WordWrap = True
+          Index = 104
+        end
+        object wwDataGrid1A1_TELEX: TwwGridColumn
+          FieldName = 'A1_TELEX'
+          Title = 'A1_TELEX'
+          Width = -1
+          Visible = False
+          Index = 105
+        end
+        object wwDataGrid1A1_FAX: TwwGridColumn
+          FieldName = 'A1_FAX'
+          Title = 'A1_FAX'
+          Width = -1
+          Visible = False
+          Index = 106
+        end
+        object wwDataGrid1A1_ENDCOB: TwwGridColumn
+          FieldName = 'A1_ENDCOB'
+          Title = 'A1_ENDCOB'
+          Width = -1
+          Visible = False
+          Index = 107
+        end
+        object wwDataGrid1A1_PAIS: TwwGridColumn
+          FieldName = 'A1_PAIS'
+          Title = 'A1_PAIS'
+          Width = -1
+          Visible = False
+          Index = 108
+        end
+        object wwDataGrid1A1_INSCRM: TwwGridColumn
+          FieldName = 'A1_INSCRM'
+          Title = 'A1_INSCRM'
+          Width = -1
+          Visible = False
+          Index = 109
+        end
+        object wwDataGrid1A1_VEND: TwwGridColumn
+          FieldName = 'A1_VEND'
+          Title = 'A1_VEND'
+          Width = -1
+          Visible = False
+          Index = 110
+        end
+        object wwDataGrid1A1_COMIS: TwwGridColumn
+          FieldName = 'A1_COMIS'
+          Title = 'A1_COMIS'
+          Width = -1
+          Visible = False
+          Index = 111
+        end
+        object wwDataGrid1A1_REGIAO: TwwGridColumn
+          FieldName = 'A1_REGIAO'
+          Title = 'A1_REGIAO'
+          Width = -1
+          Visible = False
+          Index = 112
+        end
+        object wwDataGrid1A1_CONTA: TwwGridColumn
+          FieldName = 'A1_CONTA'
+          Title = 'A1_CONTA'
+          Width = -1
+          Visible = False
+          Index = 113
+        end
+        object wwDataGrid1A1_BCO1: TwwGridColumn
+          FieldName = 'A1_BCO1'
+          Title = 'A1_BCO1'
+          Width = -1
+          Visible = False
+          Index = 114
+        end
+        object wwDataGrid1A1_BCO2: TwwGridColumn
+          FieldName = 'A1_BCO2'
+          Title = 'A1_BCO2'
+          Width = -1
+          Visible = False
+          Index = 115
+        end
+        object wwDataGrid1A1_BCO3: TwwGridColumn
+          FieldName = 'A1_BCO3'
+          Title = 'A1_BCO3'
+          Width = -1
+          Visible = False
+          Index = 116
+        end
+        object wwDataGrid1A1_BCO4: TwwGridColumn
+          FieldName = 'A1_BCO4'
+          Title = 'A1_BCO4'
+          Width = -1
+          Visible = False
+          Index = 117
+        end
+        object wwDataGrid1A1_BCO5: TwwGridColumn
+          FieldName = 'A1_BCO5'
+          Title = 'A1_BCO5'
+          Width = -1
+          Visible = False
+          Index = 118
+        end
+        object wwDataGrid1A1_TRANSP: TwwGridColumn
+          FieldName = 'A1_TRANSP'
+          Title = 'A1_TRANSP'
+          Width = -1
+          Visible = False
+          Index = 119
+        end
+        object wwDataGrid1A1_TPFRET: TwwGridColumn
+          FieldName = 'A1_TPFRET'
+          Title = 'A1_TPFRET'
+          Width = -1
+          Visible = False
+          Index = 120
+        end
+        object wwDataGrid1A1_COND: TwwGridColumn
+          FieldName = 'A1_COND'
+          Title = 'A1_COND'
+          Width = -1
+          Visible = False
+          Index = 121
+        end
+        object wwDataGrid1A1_DESC: TwwGridColumn
+          FieldName = 'A1_DESC'
+          Title = 'A1_DESC'
+          Width = -1
+          Visible = False
+          Index = 122
+        end
+        object wwDataGrid1A1_PRIOR: TwwGridColumn
+          FieldName = 'A1_PRIOR'
+          Title = 'A1_PRIOR'
+          Width = -1
+          Visible = False
+          Index = 123
+        end
+        object wwDataGrid1A1_RISCO: TwwGridColumn
+          FieldName = 'A1_RISCO'
+          Title = 'A1_RISCO'
+          Width = -1
+          Visible = False
+          Index = 124
+        end
+        object wwDataGrid1A1_LC: TwwGridColumn
+          FieldName = 'A1_LC'
+          Title = 'A1_LC'
+          Width = -1
+          Visible = False
+          Index = 125
+        end
+        object wwDataGrid1A1_VENCLC: TwwGridColumn
+          FieldName = 'A1_VENCLC'
+          Title = 'A1_VENCLC'
+          Width = -1
+          Visible = False
+          Index = 126
+        end
+        object wwDataGrid1A1_CLASSE: TwwGridColumn
+          FieldName = 'A1_CLASSE'
+          Title = 'A1_CLASSE'
+          Width = -1
+          Visible = False
+          Index = 127
+        end
+        object wwDataGrid1A1_LCFIN: TwwGridColumn
+          FieldName = 'A1_LCFIN'
+          Title = 'A1_LCFIN'
+          Width = -1
+          Visible = False
+          Index = 128
+        end
+        object wwDataGrid1A1_MOEDALC: TwwGridColumn
+          FieldName = 'A1_MOEDALC'
+          Title = 'A1_MOEDALC'
+          Width = -1
+          Visible = False
+          Index = 129
+        end
+        object wwDataGrid1A1_MSALDO: TwwGridColumn
+          FieldName = 'A1_MSALDO'
+          Title = 'A1_MSALDO'
+          Width = -1
+          Visible = False
+          Index = 130
+        end
+        object wwDataGrid1A1_MCOMPRA: TwwGridColumn
+          FieldName = 'A1_MCOMPRA'
+          Title = 'A1_MCOMPRA'
+          Width = -1
+          Visible = False
+          Index = 131
+        end
+        object wwDataGrid1A1_ABICS: TwwGridColumn
+          FieldName = 'A1_ABICS'
+          Title = 'A1_ABICS'
+          Width = -1
+          Visible = False
+          Index = 132
+        end
+        object wwDataGrid1A1_BLEMAIL: TwwGridColumn
+          FieldName = 'A1_BLEMAIL'
+          Title = 'A1_BLEMAIL'
+          Width = -1
+          Visible = False
+          Index = 133
+        end
+        object wwDataGrid1A1_TIPOCLI: TwwGridColumn
+          FieldName = 'A1_TIPOCLI'
+          Title = 'A1_TIPOCLI'
+          Width = -1
+          Visible = False
+          Index = 134
+        end
+        object wwDataGrid1A1_IBGE: TwwGridColumn
+          FieldName = 'A1_IBGE'
+          Title = 'A1_IBGE'
+          Width = -1
+          Visible = False
+          Index = 135
+        end
+        object wwDataGrid1A1_SIMPLES: TwwGridColumn
+          FieldName = 'A1_SIMPLES'
+          Title = 'A1_SIMPLES'
+          Width = -1
+          Visible = False
+          Index = 136
+        end
+        object wwDataGrid1A1_ABATIMP: TwwGridColumn
+          FieldName = 'A1_ABATIMP'
+          Title = 'A1_ABATIMP'
+          Width = -1
+          Visible = False
+          Index = 137
+        end
+        object wwDataGrid1A1_RECIRRF: TwwGridColumn
+          FieldName = 'A1_RECIRRF'
+          Title = 'A1_RECIRRF'
+          Width = -1
+          Visible = False
+          Index = 138
+        end
+        object wwDataGrid1A1_METR: TwwGridColumn
+          FieldName = 'A1_METR'
+          Title = 'A1_METR'
+          Width = -1
+          Visible = False
+          Index = 139
+        end
+        object wwDataGrid1A1_PAISDES: TwwGridColumn
+          FieldName = 'A1_PAISDES'
+          Title = 'A1_PAISDES'
+          Width = -1
+          Visible = False
+          Index = 140
+        end
+        object wwDataGrid1A1_ENDENT: TwwGridColumn
+          FieldName = 'A1_ENDENT'
+          Title = 'A1_ENDENT'
+          Width = -1
+          Visible = False
+          Index = 141
+        end
+        object wwDataGrid1A1_ENDREC: TwwGridColumn
+          FieldName = 'A1_ENDREC'
+          Title = 'A1_ENDREC'
+          Width = -1
+          Visible = False
+          Index = 142
+        end
+        object wwDataGrid1A1_CGC: TwwGridColumn
+          FieldName = 'A1_CGC'
+          Title = 'A1_CGC'
+          Width = -1
+          Visible = False
+          Index = 143
+        end
+        object wwDataGrid1A1_CONTATO: TwwGridColumn
+          FieldName = 'A1_CONTATO'
+          Title = 'A1_CONTATO'
+          Width = -1
+          Visible = False
+          Index = 144
+        end
+        object wwDataGrid1A1_INSCR: TwwGridColumn
+          FieldName = 'A1_INSCR'
+          Title = 'A1_INSCR'
+          Width = -1
+          Visible = False
+          Index = 145
+        end
+        object wwDataGrid1A1_PFISICA: TwwGridColumn
+          FieldName = 'A1_PFISICA'
+          Title = 'A1_PFISICA'
+          Width = -1
+          Visible = False
+          Index = 146
+        end
+        object wwDataGrid1A1_PRICOM: TwwGridColumn
+          FieldName = 'A1_PRICOM'
+          Title = 'A1_PRICOM'
+          Width = -1
+          Visible = False
+          Index = 147
+        end
+        object wwDataGrid1A1_ULTCOM: TwwGridColumn
+          FieldName = 'A1_ULTCOM'
+          Title = 'A1_ULTCOM'
+          Width = -1
+          Visible = False
+          Index = 148
+        end
+        object wwDataGrid1A1_NROCOM: TwwGridColumn
+          FieldName = 'A1_NROCOM'
+          Title = 'A1_NROCOM'
+          Width = -1
+          Visible = False
+          Index = 149
+        end
+        object wwDataGrid1A1_FORMVIS: TwwGridColumn
+          FieldName = 'A1_FORMVIS'
+          Title = 'A1_FORMVIS'
+          Width = -1
+          Visible = False
+          Index = 150
+        end
+        object wwDataGrid1A1_TEMVIS: TwwGridColumn
+          FieldName = 'A1_TEMVIS'
+          Title = 'A1_TEMVIS'
+          Width = -1
+          Visible = False
+          Index = 151
+        end
+        object wwDataGrid1A1_ULTVIS: TwwGridColumn
+          FieldName = 'A1_ULTVIS'
+          Title = 'A1_ULTVIS'
+          Width = -1
+          Visible = False
+          Index = 152
+        end
+        object wwDataGrid1A1_TMPVIS: TwwGridColumn
+          FieldName = 'A1_TMPVIS'
+          Title = 'A1_TMPVIS'
+          Width = -1
+          Visible = False
+          Index = 153
+        end
+        object wwDataGrid1A1_TMPSTD: TwwGridColumn
+          FieldName = 'A1_TMPSTD'
+          Title = 'A1_TMPSTD'
+          Width = -1
+          Visible = False
+          Index = 154
+        end
+        object wwDataGrid1A1_CLASVEN: TwwGridColumn
+          FieldName = 'A1_CLASVEN'
+          Title = 'A1_CLASVEN'
+          Width = -1
+          Visible = False
+          Index = 155
+        end
+        object wwDataGrid1A1_MENSAGE: TwwGridColumn
+          FieldName = 'A1_MENSAGE'
+          Title = 'A1_MENSAGE'
+          Width = -1
+          Visible = False
+          Index = 156
+        end
+        object wwDataGrid1A1_SALDUP: TwwGridColumn
+          FieldName = 'A1_SALDUP'
+          Title = 'A1_SALDUP'
+          Width = -1
+          Visible = False
+          Index = 157
+        end
+        object wwDataGrid1A1_RECISS: TwwGridColumn
+          FieldName = 'A1_RECISS'
+          Title = 'A1_RECISS'
+          Width = -1
+          Visible = False
+          Index = 158
+        end
+        object wwDataGrid1A1_NROPAG: TwwGridColumn
+          FieldName = 'A1_NROPAG'
+          Title = 'A1_NROPAG'
+          Width = -1
+          Visible = False
+          Index = 159
+        end
+        object wwDataGrid1A1_SALPEDL: TwwGridColumn
+          FieldName = 'A1_SALPEDL'
+          Title = 'A1_SALPEDL'
+          Width = -1
+          Visible = False
+          Index = 160
+        end
+        object wwDataGrid1A1_TRANSF: TwwGridColumn
+          FieldName = 'A1_TRANSF'
+          Title = 'A1_TRANSF'
+          Width = -1
+          Visible = False
+          Index = 161
+        end
+        object wwDataGrid1A1_SUFRAMA: TwwGridColumn
+          FieldName = 'A1_SUFRAMA'
+          Title = 'A1_SUFRAMA'
+          Width = -1
+          Visible = False
+          Index = 162
+        end
+        object wwDataGrid1A1_ATR: TwwGridColumn
+          FieldName = 'A1_ATR'
+          Title = 'A1_ATR'
+          Width = -1
+          Visible = False
+          Index = 163
+        end
+        object wwDataGrid1A1_VACUM: TwwGridColumn
+          FieldName = 'A1_VACUM'
+          Title = 'A1_VACUM'
+          Width = -1
+          Visible = False
+          Index = 164
+        end
+        object wwDataGrid1A1_SALPED: TwwGridColumn
+          FieldName = 'A1_SALPED'
+          Title = 'A1_SALPED'
+          Width = -1
+          Visible = False
+          Index = 165
+        end
+        object wwDataGrid1A1_TITPROT: TwwGridColumn
+          FieldName = 'A1_TITPROT'
+          Title = 'A1_TITPROT'
+          Width = -1
+          Visible = False
+          Index = 166
+        end
+        object wwDataGrid1A1_DTULTIT: TwwGridColumn
+          FieldName = 'A1_DTULTIT'
+          Title = 'A1_DTULTIT'
+          Width = -1
+          Visible = False
+          Index = 167
+        end
+        object wwDataGrid1A1_CHQDEVO: TwwGridColumn
+          FieldName = 'A1_CHQDEVO'
+          Title = 'A1_CHQDEVO'
+          Width = -1
+          Visible = False
+          Index = 168
+        end
+        object wwDataGrid1A1_DTULCHQ: TwwGridColumn
+          FieldName = 'A1_DTULCHQ'
+          Title = 'A1_DTULCHQ'
+          Width = -1
+          Visible = False
+          Index = 169
+        end
+        object wwDataGrid1R_E_C_N_O_: TwwGridColumn
+          FieldName = 'R_E_C_N_O_'
+          Title = 'R_E_C_N_O_'
+          Width = -1
+          Visible = False
+          Index = 170
+        end
+        object wwDataGrid1R_E_C_D_E_L_: TwwGridColumn
+          FieldName = 'R_E_C_D_E_L_'
+          Title = 'R_E_C_D_E_L_'
+          Width = -1
+          Visible = False
+          Index = 171
+        end
+        object wwDataGrid1D_E_L_E_T_: TwwGridColumn
+          FieldName = 'D_E_L_E_T_'
+          Title = 'D_E_L_E_T_'
+          Width = -1
+          Visible = False
+          Index = 172
+        end
+      end
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 216.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Rota'
+      ExplicitSize.cx = 162.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object lbRouteDetails: TListBox
+        Align = Bottom
+        Position.Y = 376.000000000000000000
+        Size.Width = 650.000000000000000000
+        Size.Height = 71.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxstyle'
+        TabOrder = 9
+        Visible = False
+        AlternatingRowBackground = True
+        DisableFocusEffect = True
+        ItemHeight = 60.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemdetaillabel'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 650.000000000000000000
+        Viewport.Height = 71.000000000000000000
+      end
+      object lbRoutes: TListBox
+        Align = Top
+        Position.Y = 33.000000000000000000
+        Size.Width = 650.000000000000000000
+        Size.Height = 129.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        OnClick = lbRoutesClick
+        AlternatingRowBackground = True
+        DisableFocusEffect = True
+        ItemHeight = 40.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemdetaillabel'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 650.000000000000000000
+        Viewport.Height = 129.000000000000000000
+      end
+      object Panel1: TPanel
+        Align = Top
+        Size.Width = 650.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 11
+        object Label1: TLabel
+          AutoSize = True
+          Position.X = 6.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 137.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemlabel'
+          TextSettings.WordWrap = False
+          Text = 'Op'#231#245'es de Rotas'
+          TabOrder = 0
+        end
+      end
+      object Panel2: TPanel
+        Align = Top
+        Position.Y = 162.000000000000000000
+        Size.Width = 650.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 10
+        object Label2: TLabel
+          AutoSize = True
+          Position.X = 6.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 129.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemlabel'
+          TextSettings.WordWrap = False
+          Text = 'Detalhe da Rota'
+          TabOrder = 0
+        end
+      end
+      object web: TWebBrowser
+        Align = Client
+        Size.Width = 650.000000000000000000
+        Size.Height = 333.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 218.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Mapa'
+      ExplicitSize.cx = 243.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Panel3: TPanel
+        Align = Bottom
+        Position.Y = 425.000000000000000000
+        Size.Width = 650.000000000000000000
+        Size.Height = 103.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object rbHybrid: TRadioButton
+          GroupName = 'mapview'
+          Position.X = 8.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 137.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          Text = 'Vis'#227'o h'#237'brida'
+          OnClick = rbHybridClick
+        end
+        object rbTerrain: TRadioButton
+          GroupName = 'mapview'
+          Position.X = 8.000000000000000000
+          Position.Y = 56.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          Text = 'Vista do terreno'
+          OnClick = rbTerrainClick
+        end
+        object rbSatellite: TRadioButton
+          GroupName = 'mapview'
+          Position.X = 8.000000000000000000
+          Position.Y = 32.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = 'Vis'#227'o de sat'#233'lite'
+          OnClick = rbSatelliteClick
+        end
+        object rbRoad: TRadioButton
+          GroupName = 'mapview'
+          IsChecked = True
+          Position.X = 8.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = 'Roteiro'
+          OnClick = rbRoadClick
+        end
+        object cbWeather: TCheckBox
+          Position.X = 164.000000000000000000
+          Position.Y = 33.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 8
+          Text = 'Mostrar tempo'
+          OnChange = cbWeatherChange
+        end
+        object cbTraffic: TCheckBox
+          IsChecked = True
+          Position.X = 164.000000000000000000
+          Position.Y = 60.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          Text = 'Mostrar tr'#225'fego'
+          OnChange = cbTrafficChange
+        end
+        object cbCycle: TCheckBox
+          Position.X = 164.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Mostrar ciclismo'
+          OnChange = cbCycleChange
+        end
+      end
+      object TMSFMXWebGMaps1: TTMSFMXWebGMaps
+        Align = Client
+        Version = '3.0.0.4'
+        Size.Width = 650.000000000000000000
+        Size.Height = 425.000000000000000000
+        Size.PlatformDefault = False
+        APIKey = 'AIzaSyCIP4DpACBU9xnitmjR4E4soNAmTiqOW5c'
+        Clusters = <>
+        Markers = <>
+        Polylines = <>
+        Polygons = <>
+        Directions = <>
+        MapOptions.DefaultLatitude = 48.859040000000000000
+        MapOptions.DefaultLongitude = 2.294297000000000000
+        Routing.PolylineOptions.Icons = <>
+        StreetViewOptions.DefaultLatitude = 48.859040000000000000
+        StreetViewOptions.DefaultLongitude = 2.294297000000000000
+        PolygonLabel.Font.Family = 'Arial'
+        TabOrder = 1
+      end
+    end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 650.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object B: TwwSearchBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 209.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      Caret.Color = claBlack
+      MaxInputLength = 0
+      ValidationOptions.ValidationFeedback = wwvfColorsAndEffects
+      FilterPropertyOptions.UseLikeOperator = True
+      FilterPropertyOptions.LikeWildcardChar = '%'
+    end
+    object TMSFMXButton1: TTMSFMXButton
+      Bitmap.PNG = {
+        89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+        F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        05DB49444154584795966D6C144518C7FFB3BB77BD975E7BA5BDBE5D4B69AF98
+        006D8550232F55A8C19060628C89207E300628C1688C51A38924463F688C2FC4
+        4822D182C118237EF18318890613B4600206448A6068AF15AED72BB6256DAFED
+        DDDEEDEE38B33777A5BDBD177FC9DE3EF3BFD99D679F7966E621F89FDC1E1EAE
+        D5157D1D21B485509473CD20748AFD0C4976E98FDADAC06DB3639114E58039A8
+        4DDF67004FCAC01A215BA243BF2A413A2129D2D1629CC9EBC09D60B03C5E62BC
+        45400EB066494A2D96681CD4F389E248BEE9F3AD8A0A318B9C0E4442035B2921
+        5FB10EF542CA30373D83911B83080D0C22A92551B37C395ADA57C15B59257A2C
+        226C10B2DBEF0FF489F6222C1D88846FEC8DCE243EF5781C2CE20B8CDF1AC1F7
+        C7BEC0786804AAA6093585661870552EC353CF1F40E3CA805053C493D01C36F4
+        D435B41E1752862C07F8E0A0D251D1CC301A0CE2DB0F0F63663E069D0D668541
+        29732C89BD075F43A06DB5505344A351EAF178F62C75421277131E76FEE5A299
+        81B2179F3C720C31359173708E44081449C697873E369FB91B36386191E80D87
+        835D4232C938C0138ECFF9D2B0736E5EBB0E6D6E1E892561B7429624A82C4AD7
+        7EBF249405D8342812A55F8F8F5FF70869C18154B667271CE7CFDFCE9B771EE2
+        42F028702EF459E61CA7418BDBDE1076CA01BECEC552B364223226AC147C109B
+        2CA34451CC8BDBE981D3FC1BC9B30590F87391C86035374D07F826C36E39D779
+        32A19A73AAB0F0DAF9A02532EC652CA415EC2176C96E0A0D86991F3C4A6C8784
+        A6AAE2692B1C4E68640FB74C07F80EC7EFB9B097B930974840620ED85C14AE6A
+        09CB7C4E54F9DCF0B1CBDFE04153AB07AE3289394161B72928AFF28AA7ADA144
+        DFCDEF120F7FA1EDD557EBC6606C0A55FE12F8EA5CF0963A592416E7AADD26C3
+        BFBC1C358D4E84D4289A9A2C37A50CB3D1B9763E0D123F588466893A3F87E8E8
+        308B18E0742B90E54CDE66C1B3C0EB75802814D1B12124D558EA0F0BF8B2340C
+        632DCB1DDA22344B147B090BBD8CCE40A550F2C39DD8B4DA0F59B141B6E53F3E
+        08950252FA48CD85CC92AEA5BD13156E87500AE36039D0D2719F9933F920947A
+        257650646D3C4BE9DCFE38DA363F2C5A85E9E8DA8EF5DB1E13ADDC50C27C2406
+        2B260AC0A7A09945A1585A3A3A0B7E3D874DD714AB1DA461D1CE8BBBAC02A488
+        97F2819D9EFC4B300DA5AC8A9235F9A268E785BFD85B5D275AB95956DB00B264
+        57CC85642397A4EA152B223AF097D0F2B261C72ED89D2ED1CAC6E172E3FE1D3B
+        452B3F14C6155EB29931653FDF986A012AAAEBB1F5897D964732D7BA77F5B01D
+        B05628F9912831C7341D9093722FBBE5DBBC33DC1E0E63723C8E7822C9CA31DD
+        BCB83D1699C548302C7A1582D58B36E918B74C076A9A9BD971478F703B1F8958
+        0C977F3E032566C36444C55434665E6323F3884F539C3FF523626CE72C84414B
+        0FA72BE64CB6F082442DA13C17FC29658189F028FACFF4E1C6858B50D5386492
+        5A0D319AC0D8E434CA455EF0E4AB28F360CDA60D68DFD285CA7A8BA4D51052DC
+        C935E94A7951BA9A25D9AC7A9A574586AE63E8723FAEFCD287C84050F448A1E9
+        065B926C9B560826A6E7E075BBD99232CC72EC6EEA5B0368DFFA005AD6B64362
+        35032F4EED76D2CD2AE4B3A2CB620738E1D0404FFF995F3FBB70F2140B791CAD
+        AD3A7B38BB1272782AE16BBA076A52C3FCE4286627B2E75F37088203AC7061C7
+        FFAAEE2EBAF9D147B28A52CB05DBFBFAAB1FDDBA7AFD057F83469E7E262ED4C5
+        2875BB616BE8316D7DFC0724FEF9C0B49772FC732722118536B5AD3EB4EFED77
+        5F117286D4642EA1E79DF75E6475C5B675EBF49CE7A9E4681216FB0A57B3B0B2
+        B9B7439B6373B6C56A704EDE2DEBDCFB1BABBD8DF65E976B664769B94711B289
+        3D7010B277B3691BB19B50AF3D6BDA6912D3484EC5F11DA58EFD6DBB7EBA23E4
+        2CF23A9066ECF443358A2DB9DF00DDC90EB036AED957BC0CC9BBC1FC9FC64350
+        FF7E093333A065A5E827A02712323D5AFFE0D971B3431E8A72E06E22E73656CB
+        49DB7A969A2B4321B9DB2669F30D8DE49CA4D32155D62F1633E802C07F879323
+        F7E63EFA9A0000000049454E44AE426082}
+      BitmapSize = 32
+      ShowImage = True
+      Version = '1.0.1.1'
+      Size.Width = 99.000000000000000000
+      Size.Height = 42.000000000000000000
+      Size.PlatformDefault = False
+      Position.X = 222.000000000000000000
+      Position.Y = 3.000000000000000000
+      TabOrder = 1
+      Text = 'Buscar'
+      OnClick = TMSFMXButton1Click
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = _data.SA1
+    ScopeMappings = <>
+    Left = 360
+    Top = 209
+  end
+  object gend: TTMSFMXWebGMapsReverseGeocoding
+    APIKey = 'AIzaSyCIP4DpACBU9xnitmjR4E4soNAmTiqOW5c'
+    Version = '1.0.3.2'
+    Left = 248
+    Top = 305
+  end
+end
